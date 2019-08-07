@@ -1,29 +1,21 @@
-#!/bin/bash
-import sys, getopt
+#!/usr/bin/env python
+
+import sys
+import getopt
 
 # Main takes command-line arguments
 def main(argv):
 
-    check = str(argv[1])
-    print(check)
+    getTruth = True
     
-    while (len(sys.argv) > 2):
+    while (getTruth == True):
+    
+        getInput = input("J> ")
 
-        if (check == "q"):
-            exit
-
-        else:
-            print("Doing shell things")
-            cin >> check
-            
-
-
-    if (len(sys.argv) < 2 ):
-        print("Requires at least one (1) other argument")
-        exit
-
+        getTruth = True
 
         
 # Begin the program
-if __name__ == "__main___":
-   main(sys.argv[1:])
+if __name__=="__main__":
+    
+    main(sys.argv[1:])
